@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Crie a sua conta.">
+  <meta name="keywords" content="login, cadastro, conta">
+  <title>Cuidar de Perto - Criar conta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <img class="logo-img" src="../img/logo.svg" alt="" width="48" height="48">
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <a class="botao botao-pequeno" href="login.html">Entrar</a>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html">Meu dia</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html">Emergência</a></li>
+        <li><a href="comunicacao.html">Comunicação</a></li>
+        <li><a href="cuidador.html">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Criar conta</h1>
+    <aside class="aviso" aria-label="Aviso">
+      <p><mark>Tela de demonstração:</mark> este site é um exemplo. Não use uma senha real. Nada é enviado nem guardado.</p>
+    </aside>
+
+    <section class="cartao-login" aria-labelledby="t-cadastro">
+      <h2 id="t-cadastro">Seus dados</h2>
+      <form action="obrigado.html" method="get">
+        <label for="k-nome">Nome completo</label>
+        <input type="text" id="k-nome" name="nome" placeholder="Digite o nome completo" autocomplete="name" required>
+
+        <label for="k-email">E-mail</label>
+        <input type="email" id="k-email" name="email" placeholder="exemplo@email.com" autocomplete="email" required>
+
+        <label for="k-nasc">Data de nascimento</label>
+        <input type="date" id="k-nasc" name="nascimento" autocomplete="bday" required>
+
+        <fieldset>
+          <legend>Eu sou</legend>
+          <label class="tarefa"><input type="radio" name="perfil" value="idoso" required> Pessoa idosa</label>
+          <label class="tarefa"><input type="radio" name="perfil" value="cuidador"> Cuidador(a)</label>
+          <label class="tarefa"><input type="radio" name="perfil" value="familiar"> Familiar</label>
+        </fieldset>
+
+        <label for="k-senha">Crie uma senha (mínimo de 8 caracteres)</label>
+        <input type="password" id="k-senha" placeholder="Crie uma senha" autocomplete="new-password" minlength="8" required>
+
+        <label class="tarefa"><input type="checkbox" required> Entendo que este site é um exemplo e não guarda os meus dados</label>
+
+        <button type="submit" class="botao">Criar conta</button>
+      </form>
+      <p>Já tem conta? <a href="login.html">Entrar</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>

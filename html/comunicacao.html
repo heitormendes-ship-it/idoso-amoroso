@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Heitor Mendes Crispim">
+  <meta name="description" content="Cartões para se comunicar sem falar.">
+  <meta name="keywords" content="comunicação, prancha, cartões, acessibilidade">
+  <title>Cuidar de Perto - Comunicação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+  <link rel="stylesheet" href="../css/estilo.css">
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topo">
+    <div class="topo-linha">
+      <a class="logo" href="../index.html">
+        <img class="logo-img" src="../img/logo.svg" alt="" width="48" height="48">
+        <span class="logo-nome">Cuidar de Perto</span>
+      </a>
+      <a class="botao botao-pequeno" href="login.html">Entrar</a>
+    </div>
+    <nav class="menu" aria-label="Menu principal">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="meu-dia.html">Meu dia</a></li>
+        <li><a href="medicamentos.html">Medicamentos</a></li>
+        <li><a href="memorias.html">Memórias</a></li>
+        <li><a href="musicas.html">Músicas</a></li>
+        <li><a href="relaxamento.html">Relaxamento</a></li>
+        <li><a href="emergencia.html">Emergência</a></li>
+        <li><a href="comunicacao.html" aria-current="page">Comunicação</a></li>
+        <li><a href="cuidador.html">Cuidador</a></li>
+        <li><a href="duvidas.html">Dúvidas</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <h1>Comunicação</h1>
+    <p>Toque em um cartão. A mensagem aparece grande no alto da tela, para quem está junto ler e ajudar. Serve para quem não consegue falar ou ouvir naquele momento.</p>
+
+    <div class="selecao">
+
+      <div class="mensagem" role="status" aria-live="polite">
+        <p class="vazio">Escolha um cartão abaixo.</p>
+        <p class="m m-agua"><span aria-hidden="true">💧</span> Quero água</p>
+        <p class="m m-fome"><span aria-hidden="true">🍽️</span> Estou com fome</p>
+        <p class="m m-banheiro"><span aria-hidden="true">🚻</span> Preciso ir ao banheiro</p>
+        <p class="m m-dor"><span aria-hidden="true">🤕</span> Estou com dor</p>
+        <p class="m m-descansar"><span aria-hidden="true">😴</span> Quero descansar</p>
+        <p class="m m-frio"><span aria-hidden="true">🥶</span> Estou com frio</p>
+        <p class="m m-calor"><span aria-hidden="true">🥵</span> Estou com calor</p>
+        <p class="m m-ligar"><span aria-hidden="true">📞</span> Quero ligar para a família</p>
+        <p class="m m-ajuda"><span aria-hidden="true">🆘</span> Preciso de ajuda</p>
+        <p class="m m-bem"><span aria-hidden="true">😀</span> Estou bem</p>
+        <p class="m m-meio"><span aria-hidden="true">😐</span> Mais ou menos</p>
+        <p class="m m-mal"><span aria-hidden="true">😢</span> Estou mal</p>
+      </div>
+
+      <section aria-labelledby="t-preciso">
+        <h2 id="t-preciso">Eu preciso de...</h2>
+        <ul class="prancha">
+          <li><label class="cartao-grande" for="p-agua"><input type="radio" name="pedido" id="p-agua" class="oculto"><span class="emoji" aria-hidden="true">💧</span>Quero água</label></li>
+          <li><label class="cartao-grande" for="p-fome"><input type="radio" name="pedido" id="p-fome" class="oculto"><span class="emoji" aria-hidden="true">🍽️</span>Estou com fome</label></li>
+          <li><label class="cartao-grande" for="p-banheiro"><input type="radio" name="pedido" id="p-banheiro" class="oculto"><span class="emoji" aria-hidden="true">🚻</span>Preciso ir ao banheiro</label></li>
+          <li><label class="cartao-grande" for="p-dor"><input type="radio" name="pedido" id="p-dor" class="oculto"><span class="emoji" aria-hidden="true">🤕</span>Estou com dor</label></li>
+          <li><label class="cartao-grande" for="p-descansar"><input type="radio" name="pedido" id="p-descansar" class="oculto"><span class="emoji" aria-hidden="true">😴</span>Quero descansar</label></li>
+          <li><label class="cartao-grande" for="p-frio"><input type="radio" name="pedido" id="p-frio" class="oculto"><span class="emoji" aria-hidden="true">🥶</span>Estou com frio</label></li>
+          <li><label class="cartao-grande" for="p-calor"><input type="radio" name="pedido" id="p-calor" class="oculto"><span class="emoji" aria-hidden="true">🥵</span>Estou com calor</label></li>
+          <li><label class="cartao-grande" for="p-ligar"><input type="radio" name="pedido" id="p-ligar" class="oculto"><span class="emoji" aria-hidden="true">📞</span>Quero ligar para a família</label></li>
+          <li><label class="cartao-grande" for="p-ajuda"><input type="radio" name="pedido" id="p-ajuda" class="oculto"><span class="emoji" aria-hidden="true">🆘</span>Preciso de ajuda</label></li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="t-como">
+        <h2 id="t-como">Como eu estou</h2>
+        <ul class="prancha">
+          <li><label class="cartao-grande" for="p-bem"><input type="radio" name="pedido" id="p-bem" class="oculto"><span class="emoji" aria-hidden="true">😀</span>Estou bem</label></li>
+          <li><label class="cartao-grande" for="p-meio"><input type="radio" name="pedido" id="p-meio" class="oculto"><span class="emoji" aria-hidden="true">😐</span>Mais ou menos</label></li>
+          <li><label class="cartao-grande" for="p-mal"><input type="radio" name="pedido" id="p-mal" class="oculto"><span class="emoji" aria-hidden="true">😢</span>Estou mal</label></li>
+        </ul>
+      </section>
+    </div>
+
+    <aside class="aviso" aria-label="Como usar">
+      <details>
+        <summary>Como usar com um cuidador</summary>
+        <p>Deixe esta página aberta no celular. A pessoa toca no cartão, a mensagem aparece em letras grandes e o cuidador confirma em voz alta: "Você quer água?".</p>
+      </details>
+      <p><mark>Urgente?</mark> Ligue para o <abbr title="Serviço de Atendimento Móvel de Urgência">SAMU</abbr>, no número 192.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Cuidar de Perto - projeto acadêmico, UNIPÊ</p>
+  </footer>
+</body>
+</html>
